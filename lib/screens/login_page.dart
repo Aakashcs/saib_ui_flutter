@@ -110,7 +110,7 @@ class _LoginPageState extends State<LoginPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("Dont have an account?",
+                    Text("Don't have an account?",
                         style: Theme.of(context).textTheme.headline3),
                     TextButton(
                       style: ButtonStyle(

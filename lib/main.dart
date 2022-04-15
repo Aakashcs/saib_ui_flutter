@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:saib_ui/screens/landing_page.dart';
 import 'package:saib_ui/screens/login_page.dart';
 
 void main() {
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       routes: {
-        '/': (context) => const LoginPage(),
+        '/': (context) => const LandingPage(),
         '/login': (context) => const LoginPage(),
       },
     );

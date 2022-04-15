@@ -49,12 +49,12 @@ class LandingPage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 20),
                       child: Row(
                         children: [
-                          buildRoundButton(
-                              context, "assets/icons/ic_aboutus.png", "About Us"),
-                          buildRoundButton(context, "assets/icons/ic_locator.png",
-                              "ATM Locator"),
-                          buildRoundButton(context, "assets/icons/ic_locator.png",
-                              "Contact Us"),
+                          buildRoundButton(context,
+                              "assets/icons/ic_aboutus.png", "About Us"),
+                          buildRoundButton(context,
+                              "assets/icons/ic_locator.png", "ATM Locator"),
+                          buildRoundButton(context,
+                              "assets/icons/ic_locator.png", "Contact Us"),
                         ],
                       ),
                     ),
@@ -74,7 +74,7 @@ class LandingPage extends StatelessWidget {
 
   ElevatedButton buildElevatedButton(BuildContext context, String text) {
     return ElevatedButton(
-      onPressed: () => {},
+      onPressed: () => {Navigator.pushNamed(context, "/login")},
       style: ButtonStyle(
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(50))),
